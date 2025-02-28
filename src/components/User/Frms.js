@@ -1,32 +1,33 @@
-// import React, { useState } from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 
-// function Frms() {
-//     const [name, setName] = useState({ username: '', password: '' });
+function Frms() {
 
-//     function change(e) {
-//         setName({ ...name, [e.target.name]: e.target.value });
-//     }
-//     const submit = (e) => {
-//         e.preventDefault()
-//         console.log(name)
-//     }
-//     let username=anshu;
-//     let password=aaa;
-//     if(username!=password){
-//         alert('Login Successfully')
-//     }
+    const [data, setData] = useState([])
     
-//     return (
-//         <div className='frm-main'>
-//             <form onClick={submit}>
-//                 <table>
-//                     <tr><td><input type='textbox' placeholder='Username' onChange={change} name='username' required></input></td></tr>
-//                     <tr><td><input type='textbox' placeholder='Password' onChange={change} name='password' required></input></td></tr>
-//                     <button className='frm-btn'>Submit</button>
-//                 </table>
-//             </form>
-//         </div>
-//     )
-// }
+    useEffect(() => {
+        axios.get('http://localhost:4000/viewallusers')
+            .then((res) => {
+                setData(res.data)
 
-// export default Frms
+            })
+            .catch((err) => {
+                console.log(err);
+
+            })
+    }, [])
+
+    console.log(data);
+    
+
+    return (
+        
+        <div>
+            <p>users</p>
+            <p1>{data.msg}</p1>
+        </div>
+           
+    )
+}
+
+export default Frms

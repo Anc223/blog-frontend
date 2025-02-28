@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './login.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 export default function Login() {
   const [name,setName]=useState({email:'', password:''});
-  const [data,setData]=useState({})
 
   const [msg,setMsg]=useState("");
   
@@ -14,9 +13,12 @@ export default function Login() {
     setName ({...name,[e.target.name]: e.target.value});
   }
 
-    axios.get(`http://localhost:4000/adduser`)
+  const submit=(e)=>{
+
+    axios.get(`http://localhost:4000/viewallusers`)
     .then((res)=>{
-        setData(res.data)
+      console.log(name);
+      console.log(res);
         
     })
     .catch((err)=>{
@@ -24,7 +26,6 @@ export default function Login() {
         
     })
 
-  const submit=(e)=>{
     setMsg("Login successfully!")
     e.preventDefault()
     console.log(name)
