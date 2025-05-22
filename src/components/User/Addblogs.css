@@ -1,0 +1,89 @@
+.adblg-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    min-height: 100vh;
+}
+.adblg-hd{
+    background-color: #f9f9f9;
+}
+
+.adblog-bg {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+
+.adm-post {
+    width: 100%;
+}
+
+.adm-post h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.adm-post form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.adm-post form input[type="text"],
+.adm-post form input[type="file"],
+.adm-post form select,
+.adm-post form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.adbtn-1,
+.adbtn-2 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.adbtn-1 {
+    background-color: #28a745;
+}
+
+.adbtn-1:hover {
+    background-color: #218838;
+}
+
+.adbtn-2 {
+    background-color: #dc3545;
+}
+
+.adbtn-2:hover {
+    background-color: #c82333;
+}
+.btn-viewblg{
+    margin-top: 10px;
+    margin-left: 80rem;
+    background-color: palevioletred;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 18px;
+    border: none;
+}

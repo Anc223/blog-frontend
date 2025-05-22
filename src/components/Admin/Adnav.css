@@ -1,0 +1,37 @@
+.advert-nav{
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.adnav-link-dsh{
+    text-decoration: none;
+    color: plum;
+    padding: 15px 20px;
+}
+.adnav-link-dsh:hover{
+    background-color: blue;
+}
+.adnav-link{
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+}
+.adnav-link:hover{
+    background-color: blue;
+    color: white;
+}
+.adnav-link:active{
+    background-color: #444;
+}
+.ad-container-fluid{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+

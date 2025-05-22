@@ -1,0 +1,73 @@
+  .adblg-bg {
+    margin-left: 275px;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+  }
+  
+  .adblg-bg h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .adblg-bg .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .adblg-bg .card {
+    width: 300px;
+    height: 25rem;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .adblg-bg .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  .adblg-bg .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .adblg-bg .card-body {
+    padding: 1rem;
+  }
+  
+  .adblg-bg .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .adblg-bg .card-text {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .adblg-bg .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .adblg-bg .btn:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,14 @@
+.ad-usr{
+    margin-left: 270px;
+}
+.btn-adusr{
+    background-color: green;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none;
+}
+.ad-usr .card{
+    margin-top: 40px;
+    margin-left: 20px;
+}

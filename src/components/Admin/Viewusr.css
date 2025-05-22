@@ -1,0 +1,22 @@
+.viewusr-bg{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 275px;
+    justify-content: center;
+}
+.viewusr-bg .card{
+    margin-left: 250px;
+    margin-top: 50px;
+    padding: 90px 50px;
+    align-items: center;
+}
+.btn-viewusr{
+    background-color: orchid;
+    padding: 8px 25px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+.navi-adhome{
+    text-decoration: none;
+}

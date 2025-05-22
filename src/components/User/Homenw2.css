@@ -1,0 +1,30 @@
+.blg-bg .card-img-top{
+    object-fit: fill;
+}
+
+.mid-crds {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.blg-bg .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.blg-bg .card:hover {
+    transform: translateY(-8px);
+}
+
+.hml-btn{
+    margin-top: 20px;
+    margin-left: 82rem;
+    border-radius: 12px;
+    padding: 15px 25px;
+    background-color: hotpink;
+    color: white;
+    border: none;
+}

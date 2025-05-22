@@ -1,0 +1,20 @@
+.hm2-bgfull{
+    display: flex;
+    background-image: url("Page\ Over2.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.hm2-bg{  
+    margin-top: 170px;
+    margin-left: 200px;
+}
+.hm2-hed h1{
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
+.hm2-btn{
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}

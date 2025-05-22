@@ -1,0 +1,32 @@
+.hm5-bgfull{
+    background-color: aliceblue;
+    display: flex;
+    height: 100vh;
+    color: black;
+}
+.hm5-bg{  
+    margin-top: 250px;
+    margin-left: 500px;
+    text-align: center;
+}
+.hm5-hed h1{
+    font-size: 3.5rem;
+}
+.hm5-btn{
+    border-radius: 18px;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+}
+.hm5-lst{
+    display: flex;
+}
+.hm5-lst p{
+    margin-left: 1000px;
+}
+.hm5-lst p1{
+    margin-left: 50px;
+}
+.logo-icon{
+    margin-left: 15px;
+}

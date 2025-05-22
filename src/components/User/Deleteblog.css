@@ -1,0 +1,26 @@
+.delblog-bg{
+    display: flex;
+   justify-content: center;
+}
+.delblog-box{
+    text-align: center;
+    margin-top: 15rem;
+    width: 400px;
+    height: 18rem;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.delblog-btn1{
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+}
+.delblog-btn2{
+    background-color: olivedrab;
+    border: none;
+    color: white;
+    margin-left: 20px;
+    padding: 5px 20px;
+}

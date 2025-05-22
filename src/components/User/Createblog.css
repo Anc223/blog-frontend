@@ -3,26 +3,28 @@
     left: 0;
     height: 100%;
     width: 200px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    background-color: black;
+    background-color: rgb(3, 45, 82);
+    color: white;
+}
+.vert-nav a{
+    padding: 30px 30px;
+    font-size: larger;
 }
 .nav-link{
     text-decoration: none;
-    color: white;
     padding: 15px 20px;
 }
 .nav-link:hover{
-    background-color: blue;
+    background-color: brown;
     color: white;
 }
 .nav-link:active{
     background-color: #444;
 }
 .cb-container-fluid{
-    background-color: black;
-    color: white;
+    color: black;
     display: flex;
     justify-content: space-between;
 }

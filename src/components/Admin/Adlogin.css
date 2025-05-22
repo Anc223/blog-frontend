@@ -1,0 +1,33 @@
+.adlgn-bd{
+    background-color: aliceblue;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: black;
+}
+.adlgn-con{
+    border: solid white;
+    background: white;
+    height: 60vh;
+    width: 60vh;
+    padding: 10px 5px;
+}
+.adlgn-header{
+    margin-top: 0px;
+    font-size: xx-large;
+    padding: 50px 20px;
+}
+.adlgn-bx input{
+    border-radius: 8px;
+    width: 250px;
+    height: 25px;
+}
+.adlgn-bt{
+    background-color: blue;
+    color: white;
+    border-radius: 12px;
+    width: 100px;
+    height: 30px;
+}

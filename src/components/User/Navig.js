@@ -1,23 +1,23 @@
 import React from 'react';
-import '../User/Navig.css';
+import './Navig.css';
 import { Link } from 'react-router-dom';
+import { FaSignOutAlt } from 'react-icons/fa';
 
 function Navig() {
   return (
-    <div>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="blogg">BLOGGER</a>
-      <div class="navbar-nav">
-        <Link to={"/"}>HOME</Link>
-        <Link to={"/blogs"}>BLOGS</Link>
-        <Link to={"/about"}>ABOUT</Link>
-        <Link to={"/contact"}>CONTACT</Link>
-        <Link to={'/login'}><button className='nav-bt'>LOGIN</button></Link>
-      </div>
-  </div>
-</nav>
-
+    <div className='navbar-home'>
+      <nav className="navbar bg-body-tertiary">
+        <div className="container-fluid">
+        <span className="logo">
+        <span className="logo-icon">B</span>LOGGER</span>
+          <Link to={"/"}>HOME</Link>
+          <Link to={"/blogs"}>BLOGS</Link>
+          <Link to={"/Category"}>CATEGORY</Link>
+          <Link to={"/Addblogs"}>ADD BLOG</Link>
+          <Link to={"/Viewprofile"}>VIEW PROFILE</Link>
+          <Link to={"/logout"}><FaSignOutAlt style={{ marginRight: '5px' }} />LOGOUT</Link>
+        </div>
+      </nav>
     </div>
   )
 }

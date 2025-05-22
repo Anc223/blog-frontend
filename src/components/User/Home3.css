@@ -1,0 +1,20 @@
+.hm3-bgfull{
+    display: flex;
+    background-image: url("R.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: black;
+}
+.hm3-bg{  
+    margin-top: 250px;
+    margin-left: 200px;
+}
+.hm3-hed h1{
+    font-size: 2.5rem;
+}
+.hm3-btn{
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}

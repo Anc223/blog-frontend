@@ -1,13 +1,17 @@
 .lgn-bd{
-    background-color: white;
+    background-image: url(pexels-rpnickson-2885320.jpg);
+    background-size: cover;
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
     height: 100vh;
+    color: white;
 }
 .lgn-con{
-    height: 100vh;
+    backdrop-filter: blur(10px);
+    background: transparent;
+    height: 60vh;
     width: 60vh;
 }
 .lgn-header{
@@ -16,7 +20,7 @@
     padding: 40px 20px;
 }
 .lgn-bt{
-    background-color: black;
+    background-color: transparent;
     color: white;
     border-radius: 12px;
     width: 100px;
@@ -24,6 +28,10 @@
 }
 .sgnup-lnk{
     font-size: small;
-    text-decoration: none;
     padding: 8px 8px;
+    color: red;
+    text-decoration: none;
+}
+.frgt-passwd{
+    color: red;
 }

@@ -1,0 +1,30 @@
+.catg2-bg {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catg2-bg .carousel {
+    margin-top: 3rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .catg2-bg .carousel {
+        width: 50rem;
+    }
+}
+
+.catg-main {
+    margin-top: 90px;
+    margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+    .catg-main {
+        margin: 2rem auto;
+        text-align: center;
+    }
+}

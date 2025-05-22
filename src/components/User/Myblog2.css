@@ -1,0 +1,23 @@
+.myblgvw-bg{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    justify-content: center;
+    text-align: center;
+}
+.edit-btn{
+    background-color: blueviolet;
+    color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+}
+.edit-btn1{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+}

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import './login.css';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
   const [name,setName]=useState({email:'', password:''});
+  const navigate = useNavigate();
 
-  const [msg,setMsg]=useState("");
+  // const [msg,setMsg]=useState("");
   
 
   function change(e){
@@ -15,18 +16,28 @@ export default function Login() {
 
   const submit=(e)=>{
 
-    axios.get(`http://localhost:4000/viewallusers`)
+    axios.post(`http://localhost:4001/loginuser`,name)
     .then((res)=>{
-      console.log(name);
       console.log(res);
-        
+      if(res.data.status===200){
+        alert("Login Succssfully")
+        localStorage.setItem("userid",res.data.data._id)
+        console.log(res.data.data._id);
+        navigate("/Home")
+      }
+      else if(res.data.status===404){
+        alert("Incorrect password")
+      }
+      else if(res.data.status===402){
+        alert("Please enter a valid Email")
+      }
     })
     .catch((err)=>{
         console.log(err);
         
     })
 
-    setMsg("Login successfully!")
+    // setMsg("Login successfully!")
     e.preventDefault()
     console.log(name)
   }
@@ -35,13 +46,15 @@ export default function Login() {
     <div className='lgn-bd'>
       <div className='lgn-con'>
       <form onSubmit={submit}>
+        <div><h1>Welcome to Blogger!</h1></div>
             <div className='lgn-header'>LOGIN</div>
-            <div className='lgn-email'>
-                <input type='textbox' placeholder='email' size={30} onChange={change} name='email' required></input><br /><br /></div>
+            <div className='lgn-usrname'>
+                <input type='textbox' placeholder='Email' size={30} value={name.email} onChange={change} name='email' required></input><br /><br /></div>
             <div className='lgn-pswd'>
-                <input type='password' placeholder='password' size={30} onChange={change} name='password' required></input><br /><br /></div>
-                <button className='lgn-bt' onClick={submit}>LOGIN</button>< Link to={'/signup'}><a className='sgnup-lnk'>SIGNUP</a></Link>
-                {msg && <p style={{color:"green"}}>{msg}</p>}
+                <input type='password' placeholder='Password' size={30} value={name.password} onChange={change} name='password' required></input><br /><br /></div>
+               <button className='lgn-bt'>LOGIN</button><a className='sgnup-lnk'href='/signup'>SIGNUP</a><br/><br/>
+               <a className='frgt-passwd' href='/Forgetpswd'>Forget password</a>
+                {/* {msg && <p style={{color:"green"}}>{msg}</p>} */}
             </form>
         </div>
         </div>
